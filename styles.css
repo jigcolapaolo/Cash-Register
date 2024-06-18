@@ -1,0 +1,194 @@
+/* FUENTE (GOOGLE) */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+/* -------------VARIABLES-------------- */
+:root {
+    --hue: 540;
+    --first-color: hsl(var(--hue), 52% , 48%);
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
+    --title-color: hsl(228, 8%, 95%);
+    --text-color: hsl(228, 8%, 65%);
+    --body-color: hsl(228, 15%, 20%);
+    --container-color: hsl(228, 15%, 15%);
+  
+    /* FUENTE Y TAMAÑOS */
+    --body-font: "DotGothic16", serif;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+  
+    /* FONT WEIGHT */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  }
+
+/* ------------RESET-------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    border: none;
+}
+
+body,
+button,
+textarea,
+input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    cursor: default;
+}
+
+/* CLASSES */
+
+.container {
+    min-width: 400px;
+    height: 90%;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-box {
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: default;
+}
+
+.title-box h1 {
+    text-shadow: 1px 1px 10px var(--first-color);
+}
+
+#cash {
+    margin-top: 5px;
+    padding: .4rem .6rem;
+    border-radius: 5px;
+    font-size: var(--h2-font-size);
+    box-shadow: 0px 0px 30px -5px var(--first-color-alt);
+}
+
+#purchase-btn {
+  padding: .4rem;
+  cursor: pointer; 
+  border-radius: 2px;
+  border: .4px solid var(--first-color-alt);
+}
+
+    #purchase-btn:hover {
+        box-shadow: 0px 0px 30px -11px var(--first-color);
+        background-color: var(--first-color);
+    }
+
+    #purchase-btn:active {
+        background-color: var(--first-color-alt);
+    }
+
+.price-div {
+    background-color: var(--first-color-alt);
+    padding: .4rem;
+    border-radius: 4px;
+    width: 200px;
+}
+
+    #cash-display {
+        background-color: var(--container-color);
+        padding: 4px;
+        text-align: center;
+    }
+
+.register-c-div {
+    background-color: var(--first-color-alt);
+    width:30px;
+    height: 15px;
+    margin-left: 40px;
+}
+
+.cash-center {
+    display: flex;
+    background-color: var(--first-color-alt);
+    width: 330px;
+    gap: 1rem;
+    border-radius: 30px 30px 0 0;
+}
+
+.sq-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 3px;
+    padding: 1rem;
+    width: 110px;
+    height: 80px;
+
+}
+
+    .sq {
+        background-color: var(--container-color);
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+    }
+
+.cid-div {
+    color: black;
+    background-color: white;
+    padding: .4rem;
+    width: 180px;
+    margin: .4rem 0;
+}
+
+.drawer-div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--first-color-alt);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.drawer-handle {
+    background-color: var(--container-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
