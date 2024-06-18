@@ -1,5 +1,8 @@
 <h1>Cash Register</h1>
 
+![cashImg](https://github.com/jigcolapaolo/Cash-Register/assets/145474462/be8ba19a-592c-4f48-b21f-741f3cf3fb7c)
+
+
 <h3>[English]</h3>
 <p>
 This cash register program has an initial amount of money and a fixed price.
